@@ -1,0 +1,105 @@
+#reverse a string
+msg ="hello"
+puts msg.reverse
+
+#concatinating the multiple string
+#approach1
+name = "hello"
+name1 =name.concat("world")
+puts name
+
+#approach2
+name1 = "ruby"
+name2 ="framework"
+puts "#{name1} on rails is a web dev #{name2}"
+
+
+#replace character in a string
+name1 = "web designing"
+puts name1.gsub("d","i")
+
+
+name2 = "web development"
+puts name2.gsub("web","development")
+
+#replace all characters in a string
+name1 ="arunkumar"
+puts "original name is ::#{name1}"
+puts "replaced string is ::#{name1.replace("ashwath")}"
+
+
+# convert all letters of string to upper case
+name1 ="Arunkumarp"
+puts name1.upcase
+
+#conert all letters of a stirng to lower case
+name1 ="ARUNKUMARP"
+puts name1.downcase
+
+#capitalize the first letter
+name1 +"arun"
+puts name1.capitalize
+
+
+#remove white space
+name1 = "  hello world    "
+puts name1
+puts name1.strip
+
+name2 ="  helloworld  "
+puts name2
+puts name2.lstrip
+
+name2 ="  helloworld  "
+puts name2
+puts name2.rstrip
+
+#compare the string
+name1 = "heloo"
+puts name1.eql?("heloo")
+puts name1.eql?("hello")
+
+#get the character index in string
+name1 ="anjanaeya"
+puts name1.index("n")
+
+#extracting character from string
+name1 ="Ashwattam"
+puts name1[3]
+
+#convert string array to char array
+name1 ="welcome to the ruby world"
+name2 =name1.split(" ")
+puts name2
+puts name2.class
+
+#angrams
+
+s1 ="w e i b"
+s2 ="e b w"
+s3 =s1.split(" ")
+s4 =s2.split(" ")
+if s1.length==s2.length && s3.sort == s4.sort
+    puts " the #{s1} and #{s2} are angrams with each other"
+else 
+    puts"these are not angrams with each other"
+    
+end
+
+#palindrome
+
+name1 ="raiau"
+name2 =name1.reverse
+puts name2
+if name2.eql?("#{name1}")
+    puts "the string #{name1} is a palindrome "
+else
+    puts "the given #{name1} is not a palindrome"
+
+end
+    
+
+
+
+
+
